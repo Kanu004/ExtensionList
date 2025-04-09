@@ -3,51 +3,103 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #ebf4fb;
+}
 .bar{
     height: 7vh;
-    width: auto;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #545c74;
+    background-color: white;
     padding:10px;
-    margin: 2%;
+    margin-top: 3%;
+    margin-left: 11%;
     border-radius: 8px;
 }
-#sun{
+#moon{
     height: fit-content;
     width: fit-content;
-    background-color: #363c4e;
+    background-color: #c1c2c5;
     border-radius: 5px;
     padding: 5px;
 }
 .subBar{
     height: 9vh;
-    width: auto;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    margin:3% 2%;
+    margin: 3% 0% 0% 0%;
 }
 .heading{
     font-size: 2rem;
     font-weight: bolder;
     color:black;
+    margin-left: 13%;
 }
 .headingButtons a{
     text-decoration: none;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 8px;
-    background-color: #595e71;
-    color: white;
-    padding: 8px;
+    background-color: white;
+    color: #595e71;
+    padding: 7px;
 }
 #all{
     background-color: #ef5e56;
     color: #363c4e;
 }
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,350px);
+    grid-template-rows: repeat(4,200px);
+    gap: 10px;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    border-radius: 20px;
+    padding:10px ;
+    margin: 10px;
+    height: 100%;
+    width: 100%;
+}
+.content{
+    display: flex;
+    padding: 10px;
+}
+.innerContent{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+}
+.innerContent h3,.innerContent p{
+    color: #363c4e;
+}
+.button{
+    display: flex;
+}
+.button button{
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background-color:transparent;
+    border: 1px solid ;
+    color: #595e71;
+    font-weight: bolder;
+}
 .attribution {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
     font-size: 11px;
     text-align: center;
   }
