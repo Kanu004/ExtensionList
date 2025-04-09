@@ -24,6 +24,10 @@ body{
     background-color: #e7e8eb;
     border-radius: 5px;
     padding: 0.4%;
+    cursor: pointer;
+    &:hover{
+        border:1px solid #ef5e56;
+    }
 }
 .subBar{
     height: 9vh;
@@ -53,6 +57,9 @@ body{
     background-color: white;
     color: #595e71;
     padding: 4%;
+    &:hover{
+        border:1px solid #ef5e56;
+    }
 }
 #all{
     background-color: #ef5e56;
@@ -103,14 +110,21 @@ body{
     border: 1px solid ;
     color: #595e71;
     font-weight: bolder;
+    cursor: pointer;
+    &:hover{
+        background-color: #ef5e56;
+        color: white;
+    }
 }
 .icons{
     color: #ef5e56;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 .icon{
     color: grey;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 .attribution {
     display: flex;
@@ -123,3 +137,5 @@ body{
   .attribution a {
     color: hsl(228, 45%, 44%);
   }
+
+/*media queries*/
