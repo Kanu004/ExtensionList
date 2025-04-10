@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing: border-box;
 }
 body{
@@ -93,17 +93,22 @@ body{
     flex-direction: column;
     padding: 1%;
     margin: 1% ;
-    text-align: justify;
+    text-align:left;
 }
 .innerContent h3{
     font-size: 1.5rem;
     color: #363c4e;
 }
 .innerContent p{
-    font-size: 1rem;
-    letter-spacing: 0.01rem;
-    color: #363c4e;
-}
+        font-size: 1rem;
+        letter-spacing: 0.01rem;
+        color: #363c4e;
+        word-break: normal;
+        overflow-wrap: break-word;
+        max-width: 90%;
+        line-height: 1.5;
+        padding-right: 5px;
+    }
 .button{
     display: flex;
     justify-content: space-between;
@@ -148,45 +153,62 @@ body{
 /*media queries*/
 @media (max-width:540px) {
     .bar{
-        width: 100%;
-        margin: 0;
+        width: 90%;
+        margin: 1%;
     }
     .subBar{
-        width: 100%;
+        margin: 1%;
+        width: 90%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     .cards{
-        width: 100%;
+        margin: 1%;
+        width: 90%;
         display: flex;
         flex-direction: column;
         gap: 1%;
         flex-wrap: nowrap;
     }
+        .innerContent p {
+            max-width: 90%;
+            word-break: normal;
+            overflow-wrap: break-word;
+
+        
+    }
 }
 
 @media (min-width:541px) and (max-width:1024px){
     .bar{
-        width: 100%;
-        margin: 0;
+        width: 90%;
+        margin: 1%;
     }
     .subBar{
-        width: 100%;
+        margin: 1%;
+        width: 90%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     .cards{
-        width: 100%;
+        margin: 1%;
+        width: 90%;
         display: flex;
         flex-wrap: wrap;
         gap: 1%;
     }
     .card{
         width: 30%;
+    }
+    .innerContent p {
+        max-width: 90%;
+        word-break: normal;
+        overflow-wrap: break-word; 
+        
     }
 }
 
