@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
     box-sizing: border-box;
 }
 body{
@@ -94,7 +95,13 @@ body{
     margin: 1% ;
     text-align: justify;
 }
-.innerContent h3,.innerContent p{
+.innerContent h3{
+    font-size: 1.5rem;
+    color: #363c4e;
+}
+.innerContent p{
+    font-size: 1rem;
+    letter-spacing: 0.01rem;
     color: #363c4e;
 }
 .button{
@@ -139,3 +146,47 @@ body{
   }
 
 /*media queries*/
+@media (max-width:540px) {
+    .bar{
+        width: 100%;
+        margin: 0;
+    }
+    .subBar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1%;
+        flex-wrap: nowrap;
+    }
+}
+
+@media (min-width:541px) and (max-width:1024px){
+    .bar{
+        width: 100%;
+        margin: 0;
+    }
+    .subBar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1%;
+    }
+    .card{
+        width: 30%;
+    }
+}
+
