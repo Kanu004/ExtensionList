@@ -1,0 +1,22 @@
+{
+    "name": "Browser Extensions Manager",
+    "short_name": "Extensions Manager",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4CAF50",
+    "description": "A simple UI to manage browser extensions visually.",
+    "icons": [
+      {
+        "src": "./assets/images/android-icon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "./assets/images/apple-icon-152x152.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
