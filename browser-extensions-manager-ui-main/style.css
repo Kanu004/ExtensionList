@@ -158,7 +158,7 @@
     border: none;
     background-color:transparent;
     border: 1px solid ;
-    color: #595e71;
+    color: #091540;
     font-weight: bolder;
     cursor: pointer;
     &:hover{
@@ -172,7 +172,7 @@
     cursor: pointer;
 }
 .icon{
-    color: grey;
+    color: #091540;
     font-size: 1.5rem;
     cursor: pointer;
 }

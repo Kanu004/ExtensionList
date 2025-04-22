@@ -20,6 +20,17 @@ function toggling() {
   cards.forEach(card => {
     card.classList.toggle('darkMode');
   });
+
+  let moon = document.querySelector('.moon');
+  let sun = document.querySelector('.sun');
+
+  if (moon.style.display !== 'none') {
+    moon.style.display = 'none';
+    sun.style.display = 'inline-block';
+  } else {
+    moon.style.display = 'inline-block';
+    sun.style.display = 'none';
+  }
 }
 
 // Set initial data-status for each card based on toggle icon
@@ -43,39 +54,25 @@ function showAll() {
 
 function showActive() {
   cards.forEach(card => {
-    card.getAttribute('data-status') === 'active' 
-      ? card.style.cssText=`
-      display:flex;
-      flex-wrap:wrap;
-      background-color:white;
-      border: 0.8px solid grey;
-      border-radius: 20px;
-      padding:2%;
-      margin:5%;
-      height:250px;
-      width:100%;
-      `
-      : card.style.display = 'none';
+    if (card.getAttribute('data-status') === 'active') {
+      card.style.display = 'flex';
+    } else {
+      card.style.display = 'none';
+    }
   });
 }
 
 function showInactive() {
   cards.forEach(card => {
-    card.getAttribute('data-status') === 'inactive' 
-      ? card.style.cssText=`
-    display:flex;
-    flex-wrap:wrap;
-    background-color:white;
-    border: 0.8px solid grey;
-    border-radius: 20px;
-    padding:2%;
-    margin: 5%;
-    height:250px;
-    width:100%;
-    `
-      : card.style.display = 'none';
+    if (card.getAttribute('data-status') === 'inactive') {
+      card.style.display = 'flex';
+    } else {
+      card.style.display = 'none';
+    }
   });
 }
+
+
 
 // Event Listeners
 allBtn.addEventListener('click', (e) => {
@@ -95,3 +92,5 @@ inactiveBtn.addEventListener('click', (e) => {
 
 // Initial status assignment
 setCardStatus();
+document.querySelector('.moon').style.display = 'inline-block';
+document.querySelector('.sun').style.display = 'none';
